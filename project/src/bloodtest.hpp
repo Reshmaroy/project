@@ -10,7 +10,7 @@
 
 
 #include <iostream>
-
+//bloodtype
 using namespace std;
 
 
