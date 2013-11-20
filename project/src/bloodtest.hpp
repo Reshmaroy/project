@@ -10,7 +10,7 @@
 
 
 #include <iostream>
-//bloodtype
+//bloodtype agaun
 using namespace std;
 
 
