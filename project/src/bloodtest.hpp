@@ -19,7 +19,7 @@ class bloodtest {
         string name;
         string doctor;
         string bloodtype;
-     public:
+     public: //reshma
     bloodtest();
     void display();
     void annotation();
