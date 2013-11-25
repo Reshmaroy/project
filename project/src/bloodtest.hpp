@@ -10,21 +10,26 @@
 
 
 #include <iostream>
-//bloodtype agaun
+#include <string>
+#include <stdio.h>
+
 using namespace std;
 
+// The base class
 
 class bloodtest {
     protected:
-        string name;
-        string doctor;
+		string firstname, lastname;
+		string gender,doctor_name;
         string bloodtype;
-     public: //reshma
-    bloodtest();
-    void display();
-    void annotation();
-};
+        string occupation;
+     public:
 
+    void b_test();
+    void annotation();
+
+};
+// Derived class 1
 class bloodcount : public bloodtest
 {
 private:
@@ -35,23 +40,38 @@ private:
      float hematocrit;
     float MCV;
 public:
-};
+    bloodcount()
+    {
+    	RBC=0;
+    	WBC=0;
+    	platelets=0;
+    	hemoglobins=0;
+    	hematocrit=0;MCV=0;
+    }
+    void test();
 
+};
+// Derived class 2
 class bloodglucose : public bloodtest
 {
 private:
-    float plasmaglucose;
+    float pla_glucose;
 public:
+    bloodglucose()
+{
+    	pla_glucose=0;
+}
     void plasmaglucose();
 };
-
+// Derived class 3
 class lipoprotein : public bloodtest
  {
 private:
-    float totalcholesterol;
-    float LDLcholesterol;
-    float HDLcholesterol;
+    float total_chol;
+    float LDL_chol;
+    float HDL_chol;
 public:
+
     void totalcholesterol();
     void LDLcholesterol();
     void HDLcholesterol();
@@ -60,10 +80,5 @@ public:
 
 
 
-#endif /* BLOODTEST_H_ */
 
-
-
-
-
-#endif /* BLOODTEST_HPP_ */
+#endif // BLOODTEST_HPP_
