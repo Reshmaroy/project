@@ -184,7 +184,7 @@ void lipoprotein::totalcholesterol(){
 		cout<<"Patient is in High state  and his cholestrol is"<<total_chol<<"mg/dL\n";
 cout<<endl;
 }
-
+//
 void lipoprotein::LDLcholesterol(){
 
 	srand(time(NULL));
